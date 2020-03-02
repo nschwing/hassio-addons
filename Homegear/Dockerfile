@@ -15,6 +15,8 @@ RUN cp -R /var/lib/homegear /var/lib/homegear.data
 # Inspired by Dockerfile from visevision
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN usermod -a -G gpio 103
+
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 CMD /start.sh
