@@ -5,7 +5,7 @@ MAINTAINER Jan Schulz-Hofen <hassio@0.jan.sh>
 RUN apt-get update && apt-get -y install apt-transport-https wget ca-certificates apt-utils gnupg libzip4 libavahi-client3 libavahi-client-dev insserv
 RUN wget https://homegear.eu/packages/Release.key && apt-key add Release.key && rm Release.key
 RUN echo 'deb https://homegear.eu/packages/Debian/ buster/' >> /etc/apt/sources.list.d/homegear.list
-RUN apt-get update && apt-get -y install ntp tzdata homegear homegear-ui homegear-nodes-core homegear-nodes-extra homegear-homematicbidcos homegear-homematicwired homegear-management homegear-adminui homegear-max libhomegear-node homegear-sonos homegear-kodi homegear-ipcam vim less htop
+RUN apt-get update && apt-get -y install ntp tzdata homegear homegear-ui homegear-nodes-core homegear-nodes-extra homegear-homematicbidcos homegear-homematicwired homegear-management homegear-adminui homegear-max libhomegear-node homegear-sonos homegear-kodi homegear-influxdb homegear-ipcam vim less htop
 RUN rm -f /etc/homegear/dh1024.pem
 RUN rm -f /etc/homegear/homegear.crt
 RUN rm -f /etc/homegear/homegear.key
