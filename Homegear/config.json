@@ -12,7 +12,9 @@
   "auto_uart": true,
   "privileged": [
     "SYS_ADMIN",
-    "SYS_RAWIO"
+    "SYS_RAWIO",
+    "SYS_NICE",
+    "SYS_RESOURCE"
   ],
   "map": ["config:rw", "share:rw"],
   "arch": [
