@@ -3,11 +3,13 @@
   "version": "1.12",
   "slug": "rpi-homegear",
   "description": "Homegear as a Hassio add-on",
+  "apparmor": false,
   "startup": "before",
   "boot": "auto",
   "ingress": true,
   "ingress_port": 2001,
   "gpio": true,
+  "auto_uart": true,
   "privileged": [
     "SYS_ADMIN",
     "SYS_RAWIO"
