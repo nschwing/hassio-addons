@@ -36,4 +36,5 @@ fi
 
 service homegear start
 service homegear-influxdb start
+service homegear-management start
 tail -f /var/log/homegear/homegear.log
