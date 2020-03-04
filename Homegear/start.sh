@@ -34,7 +34,7 @@ if ! [ -f /etc/homegear/dh1024.pem ]; then
 	chmod 400 /etc/homegear/dh1024.pem
 fi
 
-#service homegear start
+service homegear start
 service homegear-influxdb start
 service homegear-management start
 tail -f /var/log/homegear/homegear.log
